@@ -1,0 +1,8 @@
+#!/bin/sh
+sleep 30
+installer -applyChoiceChangesXML /Users/Shared/Cisco\ AnyConnect/choices_anyconnect.xml  -pkg /Users/Shared/Cisco\ AnyConnect/AnyConnect.pkg -target /
+sleep 60
+cp -f /Users/Shared/Cisco\ AnyConnect/OrgInfo.json /opt/cisco/anyconnect/umbrella/
+sleep 5
+open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app/
+exit 0
